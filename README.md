@@ -30,3 +30,7 @@
 >
 >management.endpoint.restart.enabled=true
 >```
+
+---
+
+##### По всем вопросам писать мне в лс
