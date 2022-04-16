@@ -29,7 +29,9 @@ public class TestController {
 
     @GetMapping("/accounts")
     public String accountsPage(Model model) {
-        Iterable<Account> accounts = accountRepo.findAll();
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        User currentUser = userRepo.findByName(authentication.getName());
+        Iterable<Account> accounts = currentUser.getAccounts();
         model.addAttribute("accounts", accounts);
         return "account";
     }
