@@ -46,9 +46,10 @@ public class Account {
         return type;
     }
 
-    public Account(float amount, char type, Bank bank) {
+    public Account(float amount, char type, Bank bank, User user) {
         this.amount = amount;
         this.type = type;
         this.bank = bank;
+        this.user = user;
     }
 }
