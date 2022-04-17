@@ -24,7 +24,7 @@
 > Если вы пользователь MacOS:
 > Заходим в `application.properties` и меняем весь код на:
 >
->```
+>```properties
 >spring.jpa.hibernate.ddl-auto=update
 >spring.datasource.url=jdbc:mysql://${MYSQL_HOST:localhost}:8889/banksystem
 >spring.datasource.username=root
